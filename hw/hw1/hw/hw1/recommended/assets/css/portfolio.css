@@ -1,0 +1,50 @@
+.portfolio {
+    background-color: #fff;
+    margin-top: 20px;
+    padding: 20px;
+    width: 40%;
+}
+
+.portfolio-items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    height: 200px;
+    background-size: cover;
+    width: 200px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.project {
+    display: flex;
+    height: 100%;
+    justify-content: flex-end;
+    align-items: flex-end;
+    width: 100%;
+}
+.project-name {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(2, 97, 97);
+    color: white;
+}
+.item-1 {
+    background-image: url('../img/technics-q-c-640-480-1.jpg');
+}
+.item-2 {
+    background-image: url('../img/technics-q-c-640-480-2.jpg');
+}
+.item-3 {
+    background-image: url('../img/technics-q-c-640-480-5.jpg');
+}
+.item-4 {
+    background-image: url('../img/technics-q-c-640-480-7.jpg');
+}
+.item-5 {
+    background-image: url('../img/technics-q-c-640-480-9.jpg');
+}

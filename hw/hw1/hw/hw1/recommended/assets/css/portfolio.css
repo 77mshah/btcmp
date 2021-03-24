@@ -9,7 +9,11 @@
     display: flex;
     flex-wrap: wrap;
 }
-
+.portfolio-head {
+    color: rgb(2, 97, 97);
+    font-size: 24px;
+    padding-bottom: 20px;
+}
 .portfolio-item {
     height: 200px;
     background-size: cover;
@@ -47,4 +51,9 @@
 }
 .item-5 {
     background-image: url('../img/technics-q-c-640-480-9.jpg');
+}
+
+footer {
+    position: inherit !important;
+    margin-top: 20px;
 }

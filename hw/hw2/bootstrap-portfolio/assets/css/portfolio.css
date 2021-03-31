@@ -1,0 +1,46 @@
+.portfolio {
+    background-color: #fff;
+}
+.portfolio-header {
+    color: rgb(2, 97, 97);
+}
+.portfolio a {
+    text-decoration: none;
+    color: white;
+}
+
+.project-item {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250px;
+}
+
+
+.project-1 {
+    background-image: url('../img/technics-q-c-640-480-1.jpg');
+}
+.project-2 {
+    background-image: url('../img/technics-q-c-640-480-2.jpg');
+}
+.project-3 {
+    background-image: url('../img/technics-q-c-640-480-5.jpg');
+}
+.project-4 {
+    background-image: url('../img/technics-q-c-640-480-7.jpg');
+}
+.project-5 {
+    background-image: url('../img/technics-q-c-640-480-9.jpg');
+}
+
+.project-item h4 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 60px;
+    background-color: rgb(2, 97, 97);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

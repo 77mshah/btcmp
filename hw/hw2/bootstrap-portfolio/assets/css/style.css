@@ -1,0 +1,106 @@
+body {
+    background-color: #ccc;
+}
+
+header {
+    background-color: #fff;
+    /* height: 50px; */
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0 !important;
+}
+
+.container,
+.row {
+    height: 100%;
+    padding: 0 !important;
+}
+
+.menu {
+    height: 100%;
+}
+
+.logo {
+    background-color: rgb(2, 97, 97);
+    color: white !important;
+    padding: 10px;
+}
+nav {
+    height: 100%;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+}
+nav a:hover {
+    color: rgb(2, 97, 97);
+}
+.menu-divider {
+    border: 1px solid #000;
+    height: 25px;
+}
+
+.about-me {
+    background-color: #fff;
+}
+.about-header {
+    color: rgb(2, 97, 97);
+    font-weight: bolder;
+}
+.navbar-menu {
+    width: 100%;
+}
+
+
+.about-image {
+    width: 220px;
+    float: left;
+    padding: 10px;
+}
+.about-image img {
+    width: 100%;
+}
+.about-article {
+    padding: 6px;
+}
+.divider {
+    width: 100%;
+    border: 1px solid #ccc;
+    margin: 15px 0;
+}
+.connect-with-me {
+    height: 100%;
+    background-color: #fff;
+    margin-left: 20px;
+}
+.connect-header {
+    color: rgb(2, 97, 97);
+    font-size: 24px;
+}
+.social-icon {
+    width: 100px;
+}
+.social-icon a img {
+    width: 100%;
+}
+.navbar {
+    padding: 0;
+}
+
+footer {
+    box-sizing: content-box !important;
+    border-top: 5px solid rgb(2, 97, 97);
+    background-color: rgb(44, 44, 44);
+    color: white;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -71,6 +71,7 @@
         var clickedNumb = this.value; 
         console.log(clickedNumb);
         // Compare the computer and user guess
+        $("#computer-pick").text(randNum);
         if(randNum == clickedNumb) {
           console.log("true")
           $("#result").text("Your guess is true");

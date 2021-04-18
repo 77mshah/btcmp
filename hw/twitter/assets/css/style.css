@@ -11,10 +11,12 @@ button {
   background-color: inherit;
 }
 header {
-  width: 15%;
+  width: 12%;
+  position: fixed;
 }
 main {
   width: 85%;
+  margin-left: 18%;
 }
 main .row {
   margin: 0 !important;
@@ -24,6 +26,7 @@ a {
 }
 .body-container {
   display: flex;
+  z-index: -1;
 }
 .menu-items {
   list-style: none;
@@ -46,6 +49,10 @@ a {
   padding: 5px;
 }
 .menu-item a:hover {
+  background-color: #e8f5fe;
+  color: #1da1f2;
+}
+.menu-active a{
   background-color: #e8f5fe;
   color: #1da1f2;
 }
@@ -103,8 +110,22 @@ a {
 .tweet-settings a:hover {
   color: #4fb6f5;
 }
-.tweet-button a {
+.tweet-link{
+  border: none;
+  width: 90%;
+  height: 40px;
   background-color: #1da1f2;
+  padding: 5px;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 30px;
+  color: white;
+  font-weight: bold; 
+  margin-top:4% !important;
+}
+.tweet-button button {
+  border: none;
+  background-color: #8ED0F8;
   color: #fff;
   border-radius: 20px;
   padding: 10px 10px;

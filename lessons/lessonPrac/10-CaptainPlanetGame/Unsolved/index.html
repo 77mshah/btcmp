@@ -8,6 +8,11 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
   <!-- JQuery -->
+  <style>
+    body {
+      overflow: hidden;
+    }
+  </style>
   <script src="https://code.jquery.com/jquery.js"></script>
 
 </head>
@@ -154,11 +159,11 @@
       $(".supurge-man").on("click", function() {
         $('.ma-hero').html(`
         <img src="Assets/captain-planet.jpg" alt="" class="img captain-planet" style="position:absolute; top:50px; left: 80px; z-index: -20; height: 300px">
-        <img src="Assets/unnamed.jpg" alt="" class="img unnamed" style="position:absolute; top:350px; left: 400px; z-index: -19; height: 150px">
+        <img src="Assets/unnamed.png" alt="" class="img unnamed" style="position:absolute; top:340px; left: 370px; z-index: -19; height: 200px">
         `).fadeIn();
         function rotate(start, end) {
           $({deg: start}).animate({deg: end}, {
-            duration: 1000,
+            duration: 650,
             step: function(now) {
               $('.unnamed').css({
                 transform: 'rotate(' + now + 'deg)'
@@ -166,23 +171,38 @@
             }
           });
         }
-        rotate(90, -20);
+        
+        function goLeft(pixels, time) {
+          $(".unnamed").animate({left: `${pixels}px`}, time);
+        }
+
+        rotate(0, 20);
+        goLeft("-=130", 650);
+
         setTimeout(function() {
-          rotate(-20, 90);
-        }, 1000);
+          rotate(20, -20);
+          goLeft("+=130", 650);
+        }, 650);
+
         setTimeout(function() {
-          rotate(90, -20);
-        }, 2000);
+          rotate(-20, 20);
+          goLeft("-=130", 650);
+        }, 1300);
+
         setTimeout(function() {
-          rotate(-20, 90);
-        }, 3000);
+          rotate(20, -20);
+          goLeft("+=130", 650);
+        }, 1950);
+
         setTimeout(function() {
-          rotate(90, -20);
-        }, 4000);
+          rotate(-20, 20);
+          goLeft("-=130", 650);
+        }, 2600);
 
         setTimeout(function(){
           $('.unnamed').fadeOut();
-        }, 4000)
+        }, 3250);
+
 
       });
       // Move Buttons (Keyboard Down)

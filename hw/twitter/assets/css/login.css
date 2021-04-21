@@ -1,0 +1,11 @@
+.logo-background {
+    background-image: url('../img/twitter_back.png');
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fa-twitter {
+    font-size: 242px;
+    color: white;
+}
